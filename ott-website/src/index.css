@@ -1,73 +1,154 @@
-/* Navbar Section Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(variable.css);
 body {
-  background-color: #262626;
+  background: var(--Black-08);
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  padding: 32px 56px;
-}
-.navElement {
-  display: flex;
-  padding: 32px 56px;
 
-  align-items: center;
+/*Typography */
+
+h1 {}
+
+h2 {
+  color: var(--Absolute-White);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
-.navItem {
-  display: flex;
-  padding: 8px 30px 8px 8px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  border-radius: 999px;
-  border: 3px solid var(--Black-12, #1f1f1f);
-  background-color: var(--Black-06, #0f0f0f);
+
+h3 {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.navItem a {
-  display: flex;
-  padding: 12px 20px;
-  align-items: center;
-  gap: 16px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #fff;
-  font-family: Manrope;
-  font-size: 18px;
+
+h4 {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 21px */
-}
-.active {
-  display: flex;
-  padding: 12px 20px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 999px;
-  border: 1px solid var(--Black-10, #1a1a1a);
-  background-color: var(--Black-10, #1a1a1a);
+  line-height: normal;
 }
 
-.NavButton button {
-  color: white;
-  font-size: 1.2rem;
-  background-color: var(--Red-45, #e50914);
-  border: none;
+h5 {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h6 {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.p-large {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.p-medium {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.p-small {
+  color: var(--Absolute-White);
+  font-family: var(--primary-font);
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Button */
+
+.primary-btn {
   display: flex;
   padding: 16px 24px;
   align-items: center;
   gap: 8px;
-  text-decoration: none;
   border-radius: 999px;
+  background: var(--Red-45, #E50914);
+  color: var(--Absolute-White, #FFF);
+  font-family: var(--primary-font);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
 }
-/* Hero section section */
 
+.secondary-btn {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid var(--Black-15, #262626);
+  background: var(--Black-08, #141414);
+  color: var(--Absolute-White, #FFF);
+  font-family: var(--primary-font);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Global Styling */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.container{
+  display: flex;
+  margin: 32px 0px;
+}
+
+
+/* Nav */
+
+/* Hero section */
+
+/* Movies */
+
+/* Features */
+
+/* Pricing */
+
+/* Faq */
+
+/* CTA */
+
+/* Footer */
 
 /* FAQ Section Styling */
+
 .faq-container {
   padding: 24px 8px;
-
   max-width: 5xl;
   margin: 0 auto;
   display: flex;
@@ -133,7 +214,8 @@ body {
 }
 
 .faq-answer.expanded {
-  max-height: 200px; /* Adjust this value based on your content */
+  max-height: 200px;
+  /* Adjust this value based on your content */
 }
 
 .faq-answer-text {

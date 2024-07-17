@@ -1,19 +1,19 @@
 import React from "react";
 import "../index.css";
 import Logo from "../Images/Logo.png";
-import Img from "../Images/Posters/Movies/Must Watch/Barbie.jpg";
 
 function home() {
   return (
     <>
-      <div className="mainContainer">
+      <div className="home">
+
+        {/* Nav */}
+
         <div className="navbar">
-          <div className="navElement">
-            <div className="navLogo">
-              <img src={Logo} alt="Logo" />
-            </div>
+          <div className="logo">
+            <img src={Logo} alt="Logo" />
           </div>
-          <div className="navItem">
+          <div className="nav-menu">
             <a className="active" href="#">
               Home
             </a>
@@ -21,12 +21,15 @@ function home() {
             <a href="#">Subscription</a>
             <a href="#">Support</a>
           </div>
-          <div className="NavButton">
-            <button>Sign In</button>
-          </div>
+          <button className="primary-btn">Sign In</button>
         </div>
-        
-      
+
+        {/* Hero Section */}
+
+        <div className="container">
+
+        </div>
+
       </div>
     </>
   );

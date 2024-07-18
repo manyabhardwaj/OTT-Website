@@ -255,11 +255,16 @@ margin: 0;
 .moviesContainer{
   display: flex;
   flex-direction: column;
-  gap: 24px;
-padding: 0px 32px;
+  gap: 56px;
+  padding: 24px;
 align-items: flex-start;
 gap: 120px;
 align-self: stretch;
+
+}
+.movieGenreContainer{
+ display: flex;
+ gap: 24px;
 
 }
 .moviesContainer::before{

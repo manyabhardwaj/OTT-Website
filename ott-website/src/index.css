@@ -1,18 +1,30 @@
 /* Navbar Section Styling */
 body {
   background-color: #262626;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.mainContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 .navbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  width: 90%;
 
+  z-index: 10;
   align-items: center;
 
   padding: 32px 56px;
-  justify-content: space-between;
 }
 .navElement {
   display: flex;
- 
 
   align-items: center;
 }
@@ -62,10 +74,126 @@ body {
   text-decoration: none;
   border-radius: 999px;
 }
-/* Hero section section */
+/* Slider section section */
+.slider {
+  display: grid;
+  opacity: 6%;
+  place-items: center;
+
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-2 {
+  display: grid;
+  opacity: 6%;
+  place-items: center;
+
+  width: 100%;
+}
+.slider-3 {
+  display: grid;
+  opacity: 6%;
+  place-items: center;
+
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-4 {
+  display: grid;
+  opacity: 6%;
+  place-items: center;
+  height: 240px;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  height: 100%;
+  width: calc(320px * 12);
+  animation: scroll 300s linear infinite;
+}
+.slider,
+.slider-2,
+.slider-3,
+.slider-4 {
+  position: relative;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide {
+  height: 200px;
+  width: 140px;
+  display: inline-block;
+  align-items: center;
+  padding: 8px;
+
+  /* perspective: 100px; */
+}
+.slide img {
+  width: 100%;
+  transition: tranform 1s;
+  border-radius: 20px;
+  object-fit: cover;
+}
+/* .slide img:hover{
+  transform: translateZ(20px);
+} */
+
+
+
+
+/* Hero Section  */
+/* .heroSection{
+  
+
+ 
+margin-bottom: 200px;
+  position: absolute;
+z-index: 1;
+bottom: 0px;
+width: 1440px;
+
+}
+.heroSectionContent{
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+}
+.heroSectionTitle{
+  color: var(--Absolute-White, #FFF);
+text-align: center;
+
+/* H2 */
+/* font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+align-self: stretch;
+}
+ */ */
+
 
 
 /* FAQ Section Styling */
+
 .faq-container {
   padding: 24px 8px;
 
@@ -140,4 +268,11 @@ body {
 .faq-answer-text {
   padding: 10px 0;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
 }

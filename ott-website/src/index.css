@@ -1,19 +1,44 @@
 /* Navbar Section Styling */
 body {
-  background-color: #262626;
+  background: var(--Black-08, #141414);
   margin: 0;
   padding: 0;
-  height: 100vh;
+  
 }
+
+
+
 .mainContainer {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  position:relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  height: 100vh;
+  margin-bottom: 120px;
+}
+.mainContainer::before,
+.mainContainer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px; /* Adjust height as needed */
+  pointer-events: none;
+  z-index: 1;
+  filter:blur(4px)
+}
+.mainContainer::before {
+  top: 0;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.mainContainer::after {
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 .navbar {
   display: flex;
-  position: fixed;
+  position: absolute;
+
   top: 0;
   justify-content: space-between;
   width: 90%;
@@ -25,7 +50,7 @@ body {
 }
 .navElement {
   display: flex;
-
+flex-direction: row;
   align-items: center;
 }
 .navItem {
@@ -77,7 +102,7 @@ body {
 /* Slider section section */
 .slider {
   display: grid;
-  opacity: 6%;
+  opacity: 10%;
   place-items: center;
 
   z-index: 1;
@@ -87,14 +112,14 @@ body {
 }
 .slider-2 {
   display: grid;
-  opacity: 6%;
+  opacity: 10%;
   place-items: center;
 
   width: 100%;
 }
 .slider-3 {
   display: grid;
-  opacity: 6%;
+  opacity: 10%;
   place-items: center;
 
   margin: auto;
@@ -104,9 +129,9 @@ body {
 }
 .slider-4 {
   display: grid;
-  opacity: 6%;
+  opacity: 10%;
   place-items: center;
-  height: 240px;
+  height: 120px;
   margin: auto;
   position: absolute;
   width: 100%;
@@ -160,13 +185,17 @@ body {
 /* Hero Section  */
 .heroSection {
 display: flex;
+flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
-margin: 24px;
+  position:relative;
+top: 0;
+z-index: 10;
+ 
+/* margin: 24px;
   width: 90%;
 
-  margin-top: 50%;
+  margin-top: 50%; */
 }
 .heroSectionContent {
   display: flex;
@@ -174,6 +203,7 @@ margin: 24px;
   align-items: center;
   justify-content: center;
   gap: 18px;
+
 
   text-align: center;
 }
@@ -185,6 +215,7 @@ margin: 24px;
   gap: 16px;
   display: flex;
   flex-direction: column;
+  margin-top: -440px;
 }
 .heroSectionTitle h2{
   margin: 0;
@@ -220,8 +251,149 @@ margin: 0;
   display: flex;
   gap: 8px;
 }
+/* Movies Section */
+.moviesContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+padding: 0px 32px;
+align-items: flex-start;
+gap: 120px;
+align-self: stretch;
+
+}
+.moviesContainer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 60px; /* Adjust height as needed */
+  pointer-events: none;
+  z-index: 1;
+  filter:blur(4px)
+}
+.moviesContainer::before {
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.moviesContent{
+  display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+
+align-self: stretch;
+border-radius: 32px;
+border: 1px solid var(--Black-15, #262626);
+}
+
+.movieGenre{
+margin-top: -54px;
+display: flex;
+position: relative;
+display: flex;
+
+align-items: center;
+gap: 10px;
+}
+.movieGenre h2{
+  border-radius: 999px;
+background: var(--Red-45, #E50914);
+color: var(--Absolute-White, #FFF);
+text-align: center;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 24px */
+  padding: 8px 20px;
+  
+}
+.GenreBoxes{
+  display: flex;
+  flex-direction: row;
+overflow: hidden;
+gap: 24px;
+
+}
+.movieGenreContainer{
+  color: var(--Absolute-White, #FFF);
+
+  flex: 1 0 0;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+.movieGenreContainer h3{
+  margin-top: 8px;
+}
+.genre{
+  background: var(--Black-10, #1A1A1A);
+  display: flex;
+
+  
+  flex-direction: row;
+  gap: 16px;
+  
+  flex: 1 0 0;
+  display: flex;
+  border-radius: 24px;
+ 
+}
+.genreCard{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2,1fr);
+ 
+ border-radius: 24px;
+ overflow: hidden;
+ 
+ 
 
 
+
+}
+.genreCard img{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  flex: 1 0 0;
+align-self: stretch;
+object-fit: cover;
+opacity: 80%;
+
+
+
+
+}
+.cardHeading{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color:white;
+
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+ 
+}
 
 
 /* FAQ Section Styling */

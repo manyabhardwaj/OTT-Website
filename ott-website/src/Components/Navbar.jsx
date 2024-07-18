@@ -23,6 +23,7 @@ export default function Navbar() {
           <div className="NavButton">
             <button>Sign In</button>
           </div>
+          </div>
           
        
         <div className="heroSection">
@@ -41,7 +42,7 @@ export default function Navbar() {
                 </div>
             </div>
         </div>
-        </div>
+        
     </>
   )
 }

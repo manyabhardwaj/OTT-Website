@@ -24,22 +24,24 @@ export default function Navbar() {
             <button>Sign In</button>
           </div>
           
-        </div>
-        {/* <div className="heroSection">
+       
+        <div className="heroSection">
             <div className="heroSectionContent">
                 <div className="heroSectionTitle">
-                    <h1>Unlimited movies, TV shows & more</h1>
+                    <h2>Unlimited movies, TV shows & more</h2>
                     
-                </div>
+               
                 <div className="heroSectionPara">
-                    <p>Watch anywhere. Cancel anytime. Ready to watch? 
-                    Enter your email to create or restart your membership.</p>
+                    <h5>Watch anywhere. Cancel anytime. Ready to watch? 
+                    Enter your email to create or restart your membership.</h5>
+                </div>
                 </div>
                 <div className="heroSectionButton">
-                    <button><FaPlay />Start Watching Now</button>
+                    <button className='HeroBtn'><FaPlay  />Start Watching Now</button>
                 </div>
             </div>
-        </div> */}
+        </div>
+        </div>
     </>
   )
 }

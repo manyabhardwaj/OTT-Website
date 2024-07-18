@@ -33,6 +33,118 @@ export default function Movies() {
           <div className="movieGenreContainer">
             <h3>Our Genres</h3>
             <div className="GenreBoxes">
+              <div className="genre">
+                <div className="genreCard">
+                  <h5 className="cardHeading">Family</h5>
+                  <img src={Img16} />
+                  <img src={Img2} />
+                  <img src={Img3} />
+                  <img src={Img4} />
+                </div>
+              </div>
+              <div className="genre">
+                <div className="genreCard">
+                  <h5 className="cardHeading">Family</h5>
+                  <img src={Img5} />
+                  <img src={Img6} />
+                  <img src={Img7} />
+                  <img src={Img8} />
+                </div>
+              </div>
+              <div className="genre">
+                <div className="genreCard">
+                  <h5 className="cardHeading">Family</h5>
+                  <img src={Img9} />
+                  <img src={Img10} />
+                  <img src={Img11} />
+                  <img src={Img12} />
+                </div>
+              </div>
+              <div className="genre">
+                <div className="genreCard">
+                  <h5 className="cardHeading">Family</h5>
+                  <img src={Img13} />
+                  <img src={Img14} />
+                  <img src={Img15} />
+                  <img src={Img17} />
+                </div>
+              </div>
+              <div className="genre">
+                <div className="genreCard">
+                  <h5 className="cardHeading">Family</h5>
+                  <img src={Img18} />
+                  <img src={Img19} />
+                  <img src={Img20} />
+                  <img src={Img21} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="movieGenreContainer">
+            <h3>Trending Now</h3>
+            <div className="GenreBoxes">
+            <div className="genre">
+
+              <div className="genreCard">
+              <h5 className="cardHeading">Family</h5>
+                <img src={Img16} />
+                <img src={Img2} />
+                <img src={Img3} />
+                <img src={Img4} />
+              </div>
+              
+            </div>
+            <div className="genre">
+
+              <div className="genreCard">
+              <h5 className="cardHeading">Family</h5>
+                <img src={Img5} />
+                <img src={Img6} />
+                <img src={Img7} />
+                <img src={Img8} />
+              </div>
+              
+            </div>
+            <div className="genre">
+
+              <div className="genreCard">
+              <h5 className="cardHeading">Family</h5>
+                <img src={Img9} />
+                <img src={Img10} />
+                <img src={Img11} />
+                <img src={Img12} />
+              </div>
+              
+            </div>
+            <div className="genre">
+
+              <div className="genreCard">
+              <h5 className="cardHeading">Family</h5>
+                <img src={Img13} />
+                <img src={Img14} />
+                <img src={Img15} />
+                <img src={Img17} />
+              </div>
+              
+            </div>
+            <div className="genre">
+            
+              <div className="genreCard">
+              <h5 className="cardHeading">Family</h5>
+                <img src={Img18} />
+                <img src={Img19} />
+                <img src={Img20} />
+                <img src={Img21} />
+              </div>
+              
+            </div>
+            
+            
+            </div>
+          </div>
+          <div className="movieGenreContainer">
+            <h3>Must - Watch Movies</h3>
+            <div className="GenreBoxes">
             <div className="genre">
 
               <div className="genreCard">

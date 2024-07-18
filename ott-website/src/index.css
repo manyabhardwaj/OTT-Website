@@ -286,7 +286,7 @@ align-self: stretch;
 padding: 24px;
 flex-direction: column;
 align-items: flex-start;
-
+gap: 54px;
 align-self: stretch;
 border-radius: 32px;
 border: 1px solid var(--Black-15, #262626);
@@ -337,7 +337,8 @@ gap: 24px;
 align-self: stretch;
 }
 .movieGenreContainer h3{
-  margin-top: 8px;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 .genre{
   background: var(--Black-10, #1A1A1A);

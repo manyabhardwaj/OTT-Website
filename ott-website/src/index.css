@@ -115,6 +115,13 @@ h6 {
   font-weight: 500;
   line-height: normal;
   border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  background: var(--Red-50, #E50914);
+  opacity: 90%;
 }
 
 .secondary-btn {
@@ -132,6 +139,13 @@ h6 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+  background: var(--Black-06);
+  opacity: 90%;
 }
 
 /* Global Styling */
@@ -139,7 +153,6 @@ h6 {
 .home {
   display: flex;
   flex-direction: column;
-  gap: 120px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -181,6 +194,7 @@ h6 {
   border-radius: 999px;
   border: 1px solid var(--Black-10, #1A1A1A);
   background: var(--Black-10, #1A1A1A);
+  cursor: pointer;
 }
 
 .nav-item {
@@ -189,11 +203,43 @@ h6 {
   align-items: center;
   border-radius: 999px;
   color: var(--Black-15);
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: var(--Black-10, #1A1A1A);
 }
 
 
 
+
 /* Hero section */
+
+.hero-section {
+  height: 90vh;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.hero-section-content {
+  position: absolute;
+  bottom: 0;
+  right: 50;
+  display: flex;
+  padding: 0px 56px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
 
 /* Movies */
 
@@ -267,6 +313,7 @@ h6 {
 
 .features {
   display: flex;
+  margin-top: 120px;
   padding: 0px 56px;
   flex-direction: column;
   align-items: flex-start;
@@ -322,6 +369,7 @@ h6 {
 
 
 .pricing {
+  margin-top: 120px;
   display: flex;
   padding: 0px 56px;
   flex-direction: column;
@@ -357,7 +405,7 @@ h6 {
   background: var(--Black-06, #0F0F0F);
   position: relative;
   cursor: pointer;
-  width: 190px;
+  width: 182px;
   padding: 8px;
 }
 
@@ -369,8 +417,6 @@ h6 {
   flex: 1;
   text-align: center;
   padding: 10px 0;
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .toggle-switch .switch-slider {
@@ -482,6 +528,7 @@ h6 {
   gap: 60px;
   align-self: stretch;
   justify-content: space-between;
+  margin-top: 120px;
 }
 
 .faq-header {
@@ -571,6 +618,7 @@ h6 {
   gap: 24px;
   flex: 1 0 0;
   border-radius: 32px;
+  margin-top: 120px;
   background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
 }
 
@@ -584,6 +632,7 @@ h6 {
 /* Footer */
 
 .footer {
+  margin-top: 120px;
   display: flex;
   padding: 80px 56px;
   flex-direction: column;

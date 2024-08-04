@@ -1,6 +1,9 @@
 import React from "react";
 import "../index.css";
 import Smartphoneicon from "./Icons/smartphone";
+import Tableticon from "./Icons/tablet"
+import Laptopicon from "./Icons/laptop"
+import Gamingicon from "./Icons/gaming"
 
 export default function Features() {
 
@@ -25,7 +28,7 @@ export default function Features() {
                     <div className="feature-card">
                         <div className="feature-title">
                             <div className="feature-icon">
-                                <Smartphoneicon/>
+                                <Tableticon/>
                             </div>
                             <h4>Tablet</h4>
                         </div>
@@ -35,7 +38,7 @@ export default function Features() {
                     <div className="feature-card">
                         <div className="feature-title">
                             <div className="feature-icon">
-                                <Smartphoneicon/>
+                                <Laptopicon/>
                             </div>
                             <h4>Laptops</h4>
                         </div>
@@ -45,7 +48,7 @@ export default function Features() {
                     <div className="feature-card">
                         <div className="feature-title">
                             <div className="feature-icon">
-                                <Smartphoneicon/>
+                                <Gamingicon/>
                             </div>
                             <h4>Gaming Consoles</h4>
                         </div>

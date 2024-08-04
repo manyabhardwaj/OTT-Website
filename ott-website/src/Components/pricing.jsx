@@ -29,8 +29,8 @@ export default function Pricing() {
                         <label className="toggle-switch">
                             <input type="checkbox" checked={isYearly} onChange={togglePricing} />
                             <span className="switch-slider"></span>
-                            <span className="switch-label monthly">Monthly</span>
-                            <span className="switch-label yearly">Yearly</span>
+                            <span className="p-large switch-label monthly">Monthly</span>
+                            <span className="p-large switch-label yearly">Yearly</span>
                         </label>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ const FAQ = () => {
           <h3>FAQs</h3>
           <h6 className="text-gray">Got questions? We've got answers!</h6>
         </div>
-        <button className="primary-btn">Start Free Trial</button>
+        <button className="primary-btn">Ask a question</button>
       </div>
 
       <div className="faq-list">

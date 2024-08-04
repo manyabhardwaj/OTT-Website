@@ -16,19 +16,20 @@ function home() {
 
       <div className="home">
 
-        <Navbar/>
+        <Navbar />
 
         {/* Hero */}
-        <div className="heroSection">
-          <div className="heroSectionContent">
-            <div className="heroSectionTitle">
+        <div className="hero-section">
+          <div className="hero-section-content">
+            <div className="hero-section-title">
               <h2>Unlimited movies, TV shows & more</h2>
-              <h5>Watch anywhere. Cancel anytime. Ready to watch?
+              <h5 className="text-gray">Watch anywhere. Cancel anytime. Ready to watch? <br />
                 Enter your email to create or restart your membership.</h5>
             </div>
             <button className='primary-btn'><FaCirclePlay />Start Watching Now</button>
           </div>
         </div>
+
 
         <Movies />
 

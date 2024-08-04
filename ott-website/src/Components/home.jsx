@@ -7,7 +7,7 @@ import Movies from "./Movies.jsx"
 import Pricing from "./pricing.jsx"
 import Cta from "./cta.jsx"
 import Features from "./features.jsx"
-import Slider from "./Slider.jsx"
+// import Slider from "./Slider.jsx"
 import { FaCirclePlay } from "react-icons/fa6";
 
 function home() {

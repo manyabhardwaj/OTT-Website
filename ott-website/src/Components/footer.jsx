@@ -12,33 +12,33 @@ export default function Footer() {
           <div className="footer-menu">
             <h5>Home</h5>
             <div className="footer-links">
-              <a href="#"><h6 className="text-gray">Categories</h6></a>
-              <a href="#"><h6 className="text-gray">Devices</h6></a>
-              <a href="#"><h6 className="text-gray">Pricing</h6></a>
-              <a href="#"><h6 className="text-gray">FAQ</h6></a>
+              <a href=""><h6 className="text-gray">Categories</h6></a>
+              <a href=""><h6 className="text-gray">Devices</h6></a>
+              <a href=""><h6 className="text-gray">Pricing</h6></a>
+              <a href=""><h6 className="text-gray">FAQ</h6></a>
             </div>
           </div>
           <div className="footer-menu">
             <h5>Movies</h5>
             <div className="footer-links">
-              <a href="#"><h6 className="text-gray">Genres</h6></a>
-              <a href="#"><h6 className="text-gray">Trending</h6></a>
-              <a href="#"><h6 className="text-gray">Popular</h6></a>
+              <a href=""><h6 className="text-gray">Genres</h6></a>
+              <a href=""><h6 className="text-gray">Trending</h6></a>
+              <a href=""><h6 className="text-gray">Popular</h6></a>
             </div>
           </div>
           <div className="footer-menu">
             <h5>Shows</h5>
             <div className="footer-links">
-              <a href="#"><h6 className="text-gray">Genres</h6></a>
-              <a href="#"><h6 className="text-gray">Trending</h6></a>
-              <a href="#"><h6 className="text-gray">Popular</h6></a>
+              <a href=""><h6 className="text-gray">Genres</h6></a>
+              <a href=""><h6 className="text-gray">Trending</h6></a>
+              <a href=""><h6 className="text-gray">Popular</h6></a>
             </div>
           </div>
           <div className="footer-menu">
             <h5>Subscription</h5>
             <div className="footer-links">
-              <a href="#"><h6 className="text-gray">Plans</h6></a>
-              <a href="#"><h6 className="text-gray">Features</h6></a>
+              <a href=""><h6 className="text-gray">Plans</h6></a>
+              <a href=""><h6 className="text-gray">Features</h6></a>
             </div>
           </div>
           <div className="footer-menu">

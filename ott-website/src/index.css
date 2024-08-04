@@ -283,7 +283,7 @@ h6 {
   overflow-x: auto;
 scroll-behavior: smooth;
   width: 100%;
-  max-width: 1550px;
+  max-width: 1400px;
 }
 
 .movie-cards::-webkit-scrollbar {
@@ -293,7 +293,7 @@ scroll-behavior: smooth;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- flex: 0 0 280px;
+ flex: 0 0 240px;
   min-width: 250px; /* Adjust based on your card size */
   margin-right: 15px;
   height: fit-content;

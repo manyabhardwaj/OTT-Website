@@ -6,7 +6,8 @@ import Img4 from "../Images/Posters/Movies/Trending/Wakanda.jpeg";
 import Img16 from "../Images/Posters/Movies/Genres/Drama/Ruslan.jpg";
 import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
-export default function Movies() {
+// Reusable GenreSection component
+function GenreSection({ genreTitle, images }) {
   const scrollRef = useRef(null);
   const [showArrows, setShowArrows] = useState({ left: false, right: true });
 
@@ -23,14 +24,12 @@ export default function Movies() {
   const scrollLeft = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
-      updateArrowVisibility();
     }
   };
 
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
-      updateArrowVisibility();
     }
   };
 
@@ -44,97 +43,135 @@ export default function Movies() {
   }, []);
 
   return (
-    <div className="movies-container">
-      <div className="movies-content">
-        <div className="movie-sub-container">
-          <h3>Our Genres</h3>
-          <div className="movie-slider-container">
-            {showArrows.left && (
-              <div className="arrow left-arrow" onClick={scrollLeft}>
-                <IoArrowBack />
-              </div>
-            )}
-            <div className="movie-cards" ref={scrollRef}>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Action</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Action" />
-                <img src={Img2} alt="Action" />
-                <img src={Img3} alt="Action" />
-                <img src={Img4} alt="Action" />
-              </div>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Adventure</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Adventure" />
-                <img src={Img2} alt="Adventure" />
-                <img src={Img3} alt="Adventure" />
-                <img src={Img4} alt="Adventure" />
-              </div>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Comedy</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Comedy" />
-                <img src={Img2} alt="Comedy" />
-                <img src={Img3} alt="Comedy" />
-                <img src={Img4} alt="Comedy" />
-              </div>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Drama</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Drama" />
-                <img src={Img2} alt="Drama" />
-                <img src={Img3} alt="Drama" />
-                <img src={Img4} alt="Drama" />
-              </div>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Comedy</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Comedy" />
-                <img src={Img2} alt="Comedy" />
-                <img src={Img3} alt="Comedy" />
-                <img src={Img4} alt="Comedy" />
-              </div>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Comedy</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Comedy" />
-                <img src={Img2} alt="Comedy" />
-                <img src={Img3} alt="Comedy" />
-                <img src={Img4} alt="Comedy" />
-              </div>
-              <div className="genre-card">
-                <div className="genre-content">
-                  <h5>Comedy</h5>
-                  <IoArrowForward />
-                </div>
-                <img src={Img16} alt="Comedy" />
-                <img src={Img2} alt="Comedy" />
-                <img src={Img3} alt="Comedy" />
-                <img src={Img4} alt="Comedy" />
-              </div>
-            </div>
-            {showArrows.right && (
-              <div className="arrow right-arrow" onClick={scrollRight}>
+    <div className="movie-sub-container">
+      <h3>{genreTitle}</h3>
+      <div className="movie-slider-container">
+        {showArrows.left && (
+          <div className="arrow left-arrow" onClick={scrollLeft}>
+            <IoArrowBack />
+          </div>
+        )}
+        <div className="movie-cards" ref={scrollRef}>
+          {images.map((image, index) => (
+            <div className="genre-card" key={index}>
+              <div className="genre-content">
+                <h5>{genreTitle}</h5>
                 <IoArrowForward />
               </div>
-            )}
-          </div>
+              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={image.alt} />
+
+            </div>
+          ))}
         </div>
+        {showArrows.right && (
+          <div className="arrow right-arrow" onClick={scrollRight}>
+            <IoArrowForward />
+          </div>
+        )}
       </div>
-      
+    </div>
+  );
+}
+
+// Main Movies component
+export default function Movies() {
+  const genreSections = [
+    {
+      genreTitle: "Action",
+      images: [
+        { src: Img16, alt: "Action" },
+        { src: Img2, alt: "Action" },
+        { src: Img3, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+      ],
+    },
+    {
+      genreTitle: "Adventure",
+      images: [
+        { src: Img16, alt: "Adventure" },
+        { src: Img2, alt: "Adventure" },
+        { src: Img3, alt: "Adventure" },
+        { src: Img4, alt: "Adventure" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+      ],
+    },
+    {
+      genreTitle: "Comedy",
+      images: [
+        { src: Img16, alt: "Comedy" },
+        { src: Img2, alt: "Comedy" },
+        { src: Img3, alt: "Comedy" },
+        { src: Img4, alt: "Comedy" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+      ],
+    },
+    {
+      genreTitle: "Drama",
+      images: [
+        { src: Img16, alt: "Drama" },
+        { src: Img2, alt: "Drama" },
+        { src: Img3, alt: "Drama" },
+        { src: Img4, alt: "Drama" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+
+      ],
+    },
+    {
+      genreTitle: "Fantasy",
+      images: [
+        { src: Img16, alt: "Fantasy" },
+        { src: Img2, alt: "Fantasy" },
+        { src: Img3, alt: "Fantasy" },
+        { src: Img4, alt: "Fantasy" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+      ],
+    },
+    {
+      genreTitle: "Thriller",
+      images: [
+        { src: Img16, alt: "Thriller" },
+        { src: Img2, alt: "Thriller" },
+        { src: Img3, alt: "Thriller" },
+        { src: Img4, alt: "Thriller" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+        { src: Img4, alt: "Action" },
+      ],
+    },
+  ];
+
+  return (
+    <div className="movies-container">
+      <div className="movies-content">
+        {genreSections.map((section, index) => (
+          <GenreSection
+            key={index}
+            genreTitle={section.genreTitle}
+            images={section.images}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -21,23 +21,32 @@ const FAQ = () => {
     {
       question: 'Who does TNP Officer specialize in helping?',
       answer: 'TNP Officer specializes in helping recent graduates and freshers to find internships and their first jobs.'
+    },
+    {
+      question: 'Who does TNP Officer specialize in helping?',
+      answer: 'TNP Officer specializes in helping recent graduates and freshers to find internships and their first jobs.'
     }
   ];
 
   return (
     <div className="faq-container">
       <div className="faq-header">
-        <p className="faq-title">Frequently Asked Questions</p>
+        <div className="cta-content">
+          <h3>FAQs</h3>
+          <h6 className="text-gray">Got questions? We've got answers!</h6>
+        </div>
+        <button className="primary-btn">Start Free Trial</button>
       </div>
-      <ul className="faq-list">
+
+      <div className="faq-list">
         {faqItems.map((item, index) => (
-          <li key={index}>
+          <div className='faq' key={index}>
             <button
               className="faq-question"
               aria-expanded={expandedIndex === index}
               onClick={() => toggleFAQ(index)}
             >
-              <span className="faq-question-text">{item.question}</span>
+              <h6>{item.question}</h6>
               <svg
                 className={`faq-icon ${expandedIndex === index ? 'rotate' : ''}`}
                 viewBox="0 0 16 16"
@@ -50,11 +59,11 @@ const FAQ = () => {
             <div
               className={`faq-answer ${expandedIndex === index ? 'expanded' : ''}`}
             >
-              <div className="faq-answer-text">{item.answer}</div>
+              <div className="p-large text-gray">{item.answer}</div>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

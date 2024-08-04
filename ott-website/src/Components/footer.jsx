@@ -1,5 +1,8 @@
 import React from 'react'
 import "../index.css";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -46,7 +49,17 @@ export default function Footer() {
           </div>
           <div className="footer-menu">
             <h5>Connect</h5>
-            <div className="social-media"></div>
+            <div className="social-media text-gray">
+              <div className="social-media-icon">
+                <FaFacebook />
+              </div>
+              <div className="social-media-icon">
+                <IoLogoInstagram />
+              </div>
+              <div className="social-media-icon">
+                <FaXTwitter />
+              </div>
+            </div>
           </div>
         </div>
         <div className="footer-bottom">

@@ -15,8 +15,9 @@ function home() {
     <>
 
       <div className="home">
-
+      <Slider/>
         <Navbar />
+   
 
         {/* Hero */}
         <div className="hero-section">

@@ -27,9 +27,11 @@ import Img21 from "../Images/Posters/Movies/Trending/Indian.jpg";
 function CustomSlider() {
   return (
     <>
-      <div className="slider-1">
+      <div className="slider">
         <div className="slide-track">
+
           {/* 9 slides */}
+
           <div className="slide">
             <img src={Img1} alt="Slide 1" />
           </div>
@@ -57,7 +59,9 @@ function CustomSlider() {
           <div className="slide">
             <img src={Img3} alt="Slide 3" />
           </div>
+
           {/* double slides */}
+
           <div className="slide">
             <img src={Img4} alt="Slide 4" />
           </div>
@@ -89,184 +93,199 @@ function CustomSlider() {
       </div>
       <div className="slider-2">
         <div className="slide-track">
+
           {/* 9 slides */}
+
           <div className="slide">
-            <img src={Img6} alt="Slide 6" />
+            <img src={Img1} alt="Slide 1" />
           </div>
           <div className="slide">
-            <img src={Img7} alt="Slide 7" />
-          </div>
-          <div className="slide">
-            <img src={Img8} alt="Slide 8" />
-          </div>
-          <div className="slide">
-            <img src={Img9} alt="Slide 9" />
-          </div>
-          <div className="slide">
-            <img src={Img10} alt="Slide 10" />
-          </div>
-          <div className="slide">
-            <img src={Img11} alt="Slide 11" />
-          </div>
-          <div className="slide">
-            <img src={Img12} alt="Slide 12" />
-          </div>
-          <div className="slide">
-            <img src={Img13} alt="Slide 13" />
-          </div>
-          <div className="slide">
-            <img src={Img14} alt="Slide 14" />
-          </div>
-          {/* double slides */}
-          <div className="slide">
-            <img src={Img7} alt="Slide 7" />
-          </div>
-          <div className="slide">
-            <img src={Img9} alt="Slide 9" />
-          </div>
-          <div className="slide">
-            <img src={Img8} alt="Slide 8" />
-          </div>
-          <div className="slide">
-            <img src={Img12} alt="Slide 12" />
-          </div>
-          <div className="slide">
-            <img src={Img14} alt="Slide 14" />
-          </div>
-          <div className="slide">
-            <img src={Img6} alt="Slide 6" />
-          </div>
-          <div className="slide">
-            <img src={Img10} alt="Slide 10" />
-          </div>
-          <div className="slide">
-            <img src={Img13} alt="Slide 13" />
-          </div>
-          <div className="slide">
-            <img src={Img11} alt="Slide 11" />
-          </div>
-        </div>
-      </div>
-      <div className="slider-3">
-        <div className="slide-track">
-          {/* 9 slides */}
-          <div className="slide">
-            <img src={Img15} alt="Slide 15" />
-          </div>
-          <div className="slide">
-            <img src={Img16} alt="Slide 16" />
-          </div>
-          <div className="slide">
-            <img src={Img17} alt="Slide 17" />
-          </div>
-          <div className="slide">
-            <img src={Img18} alt="Slide 18" />
-          </div>
-          <div className="slide">
-            <img src={Img19} alt="Slide 19" />
-          </div>
-          <div className="slide">
-            <img src={Img20} alt="Slide 20" />
-          </div>
-          <div className="slide">
-            <img src={Img15} alt="Slide 15" />
-          </div>
-          <div className="slide">
-            <img src={Img13} alt="Slide 13" />
+            <img src={Img2} alt="Slide 2" />
           </div>
           <div className="slide">
             <img src={Img3} alt="Slide 3" />
-          </div>
-          {/* double slides */}
-          <div className="slide">
-            <img src={Img17} alt="Slide 17" />
-          </div>
-          <div className="slide">
-            <img src={Img7} alt="Slide 7" />
-          </div>
-          <div className="slide">
-            <img src={Img20} alt="Slide 20" />
-          </div>
-          <div className="slide">
-            <img src={Img12} alt="Slide 12" />
-          </div>
-          <div className="slide">
-            <img src={Img19} alt="Slide 19" />
-          </div>
-          <div className="slide">
-            <img src={Img16} alt="Slide 16" />
-          </div>
-          <div className="slide">
-            <img src={Img14} alt="Slide 14" />
-          </div>
-          <div className="slide">
-            <img src={Img21} alt="Slide 21" />
-          </div>
-          <div className="slide">
-            <img src={Img6} alt="Slide 6" />
-          </div>
-        </div>
-      </div>
-      <div className="slider-4">
-        <div className="slide-track">
-          {/* 9 slides */}
-          <div className="slide">
-            <img src={Img9} alt="Slide 9" />
           </div>
           <div className="slide">
             <img src={Img4} alt="Slide 4" />
           </div>
           <div className="slide">
-            <img src={Img16} alt="Slide 16" />
-          </div>
-          <div className="slide">
-            <img src={Img20} alt="Slide 20" />
+            <img src={Img5} alt="Slide 5" />
           </div>
           <div className="slide">
             <img src={Img6} alt="Slide 6" />
           </div>
           <div className="slide">
-            <img src={Img8} alt="Slide 8" />
+            <img src={Img1} alt="Slide 1" />
           </div>
           <div className="slide">
-            <img src={Img9} alt="Slide 9" />
+            <img src={Img2} alt="Slide 2" />
           </div>
           <div className="slide">
-            <img src={Img12} alt="Slide 12" />
+            <img src={Img3} alt="Slide 3" />
           </div>
-          <div className="slide">
-            <img src={Img10} alt="Slide 10" />
-          </div>
+
           {/* double slides */}
+          
+          <div className="slide">
+            <img src={Img4} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img5} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img4} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
           <div className="slide">
             <img src={Img3} alt="Slide 3" />
           </div>
           <div className="slide">
-            <img src={Img9} alt="Slide 9" />
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img5} alt="Slide 5" />
           </div>
           <div className="slide">
             <img src={Img2} alt="Slide 2" />
           </div>
           <div className="slide">
-            <img src={Img14} alt="Slide 14" />
-          </div>
-          <div className="slide">
-            <img src={Img18} alt="Slide 18" />
-          </div>
-          <div className="slide">
-            <img src={Img19} alt="Slide 19" />
-          </div>
-          <div className="slide">
-            <img src={Img16} alt="Slide 16" />
-          </div>
-          <div className="slide">
-            <img src={Img2} alt="Slide 2" />
-          </div>
-          <div className="slide">
-            <img src={Img20} alt="Slide 20" />
+            <img src={Img4} alt="Slide 4" />
           </div>
         </div>
       </div>
+      <div className="slider-3">
+        <div className="slide-track">
+
+          {/* 9 slides */}
+
+          <div className="slide">
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img3} alt="Slide 3" />
+          </div>
+          <div className="slide">
+            <img src={Img4} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img5} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img6} alt="Slide 6" />
+          </div>
+          <div className="slide">
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img3} alt="Slide 3" />
+          </div>
+
+          {/* double slides */}
+          
+          <div className="slide">
+            <img src={Img21} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img9} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img16} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img3} alt="Slide 3" />
+          </div>
+          <div className="slide">
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img5} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img18} alt="Slide 4" />
+          </div>
+        </div>
+      </div>
+      <div className="slider-3">
+        <div className="slide-track">
+
+          {/* 9 slides */}
+
+          <div className="slide">
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img3} alt="Slide 3" />
+          </div>
+          <div className="slide">
+            <img src={Img4} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img5} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img6} alt="Slide 6" />
+          </div>
+          <div className="slide">
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img3} alt="Slide 3" />
+          </div>
+
+          {/* double slides */}
+          
+          <div className="slide">
+            <img src={Img21} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img9} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img16} alt="Slide 4" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img3} alt="Slide 3" />
+          </div>
+          <div className="slide">
+            <img src={Img1} alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={Img5} alt="Slide 5" />
+          </div>
+          <div className="slide">
+            <img src={Img2} alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={Img18} alt="Slide 4" />
+          </div>
+        </div>
+      </div>
+      
+      
+     
     </>
   );
 }

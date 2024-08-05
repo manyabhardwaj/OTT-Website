@@ -45,7 +45,7 @@ function GenreSection({ genreTitle, images, isGrid }) {
 
   return (
     <div className="movie-sub-container">
-      <h3>{genreTitle}</h3>
+      <h4>{genreTitle}</h4>
       <div className={`movie-slider-container ${genreTitle.toLowerCase()}`}>
         {showArrows.left && (
           <div className="arrow left-arrow" onClick={scrollLeft}>

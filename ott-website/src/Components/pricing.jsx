@@ -20,9 +20,9 @@ export default function Pricing() {
             <div className="pricing">
                 <div className="pricing-header">
                     <div className="cta-content">
-                        <h3>Choose the plan that's right for you</h3>
+                        <h3>Choose the right plan</h3>
                         <h6 className="text-gray">
-                            Join Netflix and select from our flexible subscription options tailored to suit your viewing preferences.
+                            Join Netflix and select from our flexible subscription options.
                         </h6>
                     </div>
                     <div className="toggle">

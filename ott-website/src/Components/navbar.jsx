@@ -42,7 +42,7 @@ export default function Navbar() {
       {isSidebarOpen && (
         <div className="sidebar">
           <div className="sidebar-close" onClick={toggleSidebar}>
-          <IoClose  className='CloseIcon'/>
+          <IoClose size={24}  className='CloseIcon'/>
           </div>
           <div className="sidebar-menu">
             <div className="nav-item-active">

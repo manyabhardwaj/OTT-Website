@@ -41,11 +41,20 @@ const FAQ = () => {
       <div className="faq-list">
         {faqItems.map((item, index) => (
           <div className='faq' key={index}>
+
+            {/* Question */}
+
             <button
               className="faq-question"
               aria-expanded={expandedIndex === index}
               onClick={() => toggleFAQ(index)}
             >
+              {/* Number */}
+
+              <div className="faq-no">
+                <h6>01</h6>
+              </div>
+
               <h6>{item.question}</h6>
               <svg
                 className={`faq-icon ${expandedIndex === index ? 'rotate' : ''}`}
@@ -56,6 +65,9 @@ const FAQ = () => {
                 <rect y="7" width="16" height="2" rx="1" className="rotate-90" />
               </svg>
             </button>
+
+            {/* Answer */}
+
             <div
               className={`faq-answer ${expandedIndex === index ? 'expanded' : ''}`}
             >

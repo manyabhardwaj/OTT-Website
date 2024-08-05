@@ -619,6 +619,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 16px;
 }
 
 .faq {
@@ -626,11 +627,21 @@ h6 {
   padding: 24px;
   align-items: center;
   justify-content: flex-start;
-  gap: 16px;
   align-self: stretch;
+  flex-direction: column;
   border-radius: 32px;
   background: var(--Black-10, #141414);
-  width: 100%;
+}
+
+.faq-no {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 999px;
+  border: 1px solid var(--Black-15, #262626);
+  background: var(--Black-12, #1F1F1F);
 }
 
 .faq-question {
@@ -638,6 +649,7 @@ h6 {
   border: none;
   align-self: stretch;
   width: 100%;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -834,7 +846,7 @@ h6 {
   /* Footer */
   .footer-top {
     grid-template-columns: repeat(3, 2fr);
-    gap:32px;
+    gap: 32px;
   }
 
   .footer-links-bottom {
@@ -860,20 +872,20 @@ h6 {
     align-items: center;
   }
 
-    /* Footer */
-    .footer-top {
-      grid-template-columns: repeat(1, 6fr);
-      gap:32px;
-    }
-  
-    .footer-bottom {
-      flex-direction: column;
-      gap: 32px;
-    }
+  /* Footer */
+  .footer-top {
+    grid-template-columns: repeat(1, 6fr);
+    gap: 32px;
+  }
 
-    .footer-links-bottom {
-      gap: 16px;
-      flex-direction: column;
-    }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-links-bottom {
+    gap: 16px;
+    flex-direction: column;
+  }
 
 }

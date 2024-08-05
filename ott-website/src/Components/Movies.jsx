@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../index.css";
+import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 import Img2 from "../Images/Posters/Movies/Trending/Hanuman.jpg";
 import Img3 from "../Images/Posters/Movies/Must Watch/Oppenheimer.jpg";
 import Img4 from "../Images/Posters/Movies/Trending/Wakanda.jpeg";
 import Img16 from "../Images/Posters/Movies/Genres/Drama/Ruslan.jpg";
-import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
 // Reusable GenreSection component
-function GenreSection({ genreTitle, images }) {
+function GenreSection({ genreTitle, cards, isGrid }) {
   const scrollRef = useRef(null);
   const [showArrows, setShowArrows] = useState({ left: false, right: true });
 
@@ -16,7 +16,7 @@ function GenreSection({ genreTitle, images }) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
       setShowArrows({
         left: scrollLeft > 0,
-        right: scrollLeft < scrollWidth - clientWidth
+        right: scrollLeft < scrollWidth - clientWidth,
       });
     }
   };
@@ -52,17 +52,22 @@ function GenreSection({ genreTitle, images }) {
           </div>
         )}
         <div className="movie-cards" ref={scrollRef}>
-          {images.map((image, index) => (
-            <div className="genre-card" key={index}>
+          {cards.map((card, index) => (
+            <div className={`genre-card ${isGrid ? "grid-card" : "single-image-card"}`} key={index}>
               <div className="genre-content">
-                <h5>{genreTitle}</h5>
+                <h5>{card.title}</h5>
                 <IoArrowForward />
               </div>
-              <img src={image.src} alt={image.alt} />
-              <img src={image.src} alt={image.alt} />
-              <img src={image.src} alt={image.alt} />
-              <img src={image.src} alt={image.alt} />
-
+              {isGrid ? (
+                <>
+                  <div className="grid-image"><img src={card.image} alt={`${card.title} ${index + 1}`} /></div>
+                  <div className="grid-image"><img src={card.image} alt={`${card.title} ${index + 1}`} /></div>
+                  <div className="grid-image"><img src={card.image} alt={`${card.title} ${index + 1}`} /></div>
+                  <div className="grid-image"><img src={card.image} alt={`${card.title} ${index + 1}`} /></div>
+                </>
+              ) : (
+                <img src={card.image} alt={card.title} className="single-cover-image" />
+              )}
             </div>
           ))}
         </div>
@@ -80,83 +85,66 @@ function GenreSection({ genreTitle, images }) {
 export default function Movies() {
   const genreSections = [
     {
-      genreTitle: "Action",
-      images: [
-        { src: Img16, alt: "Action" },
-        { src: Img2, alt: "Action" },
-        { src: Img3, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
+      genreTitle: "Action Movies",
+      isGrid: true,
+      cards: [
+        { title: "Hanuman", image: Img16 },
+        { title: "Oppenheimer", image: Img2 },
+        { title: "Wakanda", image: Img3 },
+        { title: "Ruslan", image: Img4 },
       ],
     },
     {
-      genreTitle: "Adventure",
-      images: [
-        { src: Img16, alt: "Adventure" },
-        { src: Img2, alt: "Adventure" },
-        { src: Img3, alt: "Adventure" },
-        { src: Img4, alt: "Adventure" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
+      genreTitle: "Adventure Movies",
+      isGrid: false,
+      cards: [
+        { title: "Adventure 1", image: Img16 },
+        { title: "Adventure 2", image: Img2 },
+        { title: "Adventure 3", image: Img3 },
+        { title: "Adventure 4", image: Img4 },
       ],
     },
     {
-      genreTitle: "Comedy",
-      images: [
-        { src: Img16, alt: "Comedy" },
-        { src: Img2, alt: "Comedy" },
-        { src: Img3, alt: "Comedy" },
-        { src: Img4, alt: "Comedy" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
+      genreTitle: "Comedy Movies",
+      isGrid: false,
+      cards: [
+        { title: "Comedy 1", image: Img16 },
       ],
     },
     {
-      genreTitle: "Drama",
-      images: [
-        { src: Img16, alt: "Drama" },
-        { src: Img2, alt: "Drama" },
-        { src: Img3, alt: "Drama" },
-        { src: Img4, alt: "Drama" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-
+      genreTitle: "Drama Movies",
+      isGrid: false,
+      cards: [
+        { title: "Drama 1", image: Img16 },
       ],
     },
     {
-      genreTitle: "Fantasy",
-      images: [
-        { src: Img16, alt: "Fantasy" },
-        { src: Img2, alt: "Fantasy" },
-        { src: Img3, alt: "Fantasy" },
-        { src: Img4, alt: "Fantasy" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
+      genreTitle: "Fantasy Movies",
+      isGrid: false,
+      cards: [
+        { title: "Fantasy 1", image: Img16 },
+        { title: "Fantasy 2", image: Img16 },
+        { title: "Fantasy 1", image: Img16 },
+        { title: "Fantasy 1", image: Img16 },
+        { title: "Fantasy 1", image: Img16 },
+        { title: "Fantasy 1", image: Img16 },
+        { title: "Fantasy 1", image: Img16 },
+        { title: "Fantasy 1", image: Img16 },
       ],
     },
     {
-      genreTitle: "Thriller",
-      images: [
-        { src: Img16, alt: "Thriller" },
-        { src: Img2, alt: "Thriller" },
-        { src: Img3, alt: "Thriller" },
-        { src: Img4, alt: "Thriller" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
-        { src: Img4, alt: "Action" },
+      genreTitle: "Thriller Movies",
+      isGrid: false,
+      cards: [
+        { title: "Thriller 1", image: Img16 },
+        { title: "Thriller 2", image: Img16 },
+        { title: "Thriller 3", image: Img16 },
+        { title: "Thriller 4", image: Img16 },
+        { title: "Thriller 5", image: Img16 },
+        { title: "Thriller 6", image: Img16 },
+        { title: "Thriller 7", image: Img16 },
+        { title: "Thriller 8", image: Img16 },
+        { title: "Thriller 9", image: Img16 },
       ],
     },
   ];
@@ -168,7 +156,8 @@ export default function Movies() {
           <GenreSection
             key={index}
             genreTitle={section.genreTitle}
-            images={section.images}
+            cards={section.cards}
+            isGrid={section.isGrid}
           />
         ))}
       </div>

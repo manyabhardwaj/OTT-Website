@@ -242,6 +242,12 @@ h6 {
 
 /* Movies */
 
+.movie-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
 .movies-container {
   display: flex;
   flex-direction: column;
@@ -271,6 +277,11 @@ h6 {
   position: relative;
   display: flex;
   align-items: center;
+
+
+
+  overflow: hidden;
+  padding: 20px 0;
 }
 
 .movie-cards {
@@ -281,22 +292,36 @@ h6 {
   scroll-behavior: smooth;
   width: 100%;
   max-width: 1400px;
+
+
+
+  padding: 10px 0;
 }
 
 .movie-cards::-webkit-scrollbar {
   display: none;
 }
 
+.card-title-and-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.card-title {
+  font-size: 1rem;
+}
+
 .genre-card {
   position: relative;
-
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-
   grid-template-columns: repeat(2, 1fr);
   flex: 0 0 240px;
   min-width: 250px;
@@ -306,7 +331,18 @@ h6 {
   background: var(--Black-10, #1A1A1A);
   transition: box-shadow 0.3s ease;
 
+
+
+  margin-right: 20px;
+
+
+
 }
+
+.genre-card:hover {
+  transform: scale(1.05);
+}
+
 
 .shadow-active {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
@@ -321,7 +357,7 @@ h6 {
   z-index: 10;
   opacity: 0;
   color: rgb(241, 241, 241);
-  background-color: #342e2e;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 28px;
 
   justify-items: center;
@@ -339,6 +375,11 @@ h6 {
   right: 10px;
   font-size: 28px;
 }
+.arrow.right-arrow {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
 
 .right-arrow::before {
   content: '';
@@ -409,7 +450,7 @@ h6 {
   justify-content: space-between;
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0.05%, #1A1A1A 99.95%);
+  /* background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0.05%, #1A1A1A 99.95%); */
   color: var(--Absolute-White);
   font-size: 20px;
 
@@ -419,6 +460,107 @@ h6 {
   z-index: 1;
 
   
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.thriller-card {
+  border: none;
+  position: relative;
+  background-color: transparent;
+}
+
+.thriller-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.thriller-details {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+ background-color: gray;
+  right: 8px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 12px;
+}
+
+.thriller-time, .thriller-views {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.thriller-icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.fantasy-card {
+  position: relative;
+}
+
+.fantasy-image {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.fantasy-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  background-color: gray;
+  
+  
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.fantasy-time, .fantasy-rating {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 8px;
+}
+
+.fantasy-icon{
+  margin-right: 4px;
+  color: white;
+  font-size: bold;
+ 
+} .fantasy-star {
+
+
+  font-size: bold;
+  color: rgb(186, 6, 6);
+}
+
+.fantasy-star.half {
+  /* Styles for half star, adjust according to your icon library */
+  clip-path: inset(0 50% 0 0);
+  
+  color: rgb(186, 6, 6);
 }
 
 

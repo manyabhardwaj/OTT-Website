@@ -15,9 +15,9 @@ function home() {
     <>
 
       <div className="home">
-      <Slider/>
+
+        <Slider />
         <Navbar />
-   
 
         {/* Hero */}
         <div className="hero-section">
@@ -32,6 +32,7 @@ function home() {
         </div>
 
 
+
         <Movies />
 
         <Features />
@@ -43,7 +44,7 @@ function home() {
         <Cta />
 
         <Footer />
-       
+
 
       </div>
 

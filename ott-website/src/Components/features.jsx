@@ -11,8 +11,8 @@ export default function Features() {
         <>
             <div className="features">
                 <div className="cta-content">
-                    <h3>We Provide you streaming experience across various devices.</h3>
-                    <h6 className="text-gray">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.</h6>
+                    <h3>Eperience across various devices</h3>
+                    <h6 className="text-gray">Enjoy your favorite movies and TV shows anytime, anywhere.</h6>
                 </div>
                 <div className="features-grid">
                     <div className="feature-card">
@@ -50,7 +50,7 @@ export default function Features() {
                             <div className="feature-icon">
                                 <Gamingicon/>
                             </div>
-                            <h4>Gaming Consoles</h4>
+                            <h4>Smart TV</h4>
                         </div>
                         <h6 className="text-gray">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</h6>
                     </div>

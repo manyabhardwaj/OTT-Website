@@ -49,46 +49,46 @@ function CustomSlider() {
               <img src={Img5} alt="Slide 5" />
             </div>
             <div className="slide">
-              <img src={Img6} alt="Slide 6" />
+              <img src={Img20} alt="Slide 6" />
             </div>
             <div className="slide">
-              <img src={Img1} alt="Slide 1" />
+              <img src={Img13} alt="Slide 7" />
             </div>
             <div className="slide">
-              <img src={Img2} alt="Slide 2" />
+              <img src={Img12} alt="Slide 8" />
             </div>
             <div className="slide">
-              <img src={Img3} alt="Slide 3" />
+              <img src={Img14} alt="Slide 9" />
             </div>
 
             {/* double slides */}
 
             <div className="slide">
-              <img src={Img4} alt="Slide 4" />
+              <img src={Img10} alt="Slide 10" />
             </div>
             <div className="slide">
-              <img src={Img5} alt="Slide 5" />
+              <img src={Img2} alt="Slide 11" />
             </div>
             <div className="slide">
-              <img src={Img4} alt="Slide 4" />
+              <img src={Img3} alt="Slide 12" />
             </div>
             <div className="slide">
-              <img src={Img2} alt="Slide 2" />
+              <img src={Img4} alt="Slide 13" />
             </div>
             <div className="slide">
-              <img src={Img3} alt="Slide 3" />
+              <img src={Img5} alt="Slide 14" />
             </div>
             <div className="slide">
-              <img src={Img1} alt="Slide 1" />
+              <img src={Img14} alt="Slide 15" />
             </div>
             <div className="slide">
-              <img src={Img5} alt="Slide 5" />
+              <img src={Img13} alt="Slide 16" />
             </div>
             <div className="slide">
-              <img src={Img2} alt="Slide 2" />
+              <img src={Img12} alt="Slide 17" />
             </div>
             <div className="slide">
-              <img src={Img4} alt="Slide 4" />
+              <img src={Img10} alt="Slide 18" />
             </div>
           </div>
         </div>
@@ -98,31 +98,31 @@ function CustomSlider() {
             {/* 9 slides */}
 
             <div className="slide">
-              <img src={Img1} alt="Slide 1" />
+              <img src={Img10} alt="Slide 1" />
             </div>
             <div className="slide">
-              <img src={Img2} alt="Slide 2" />
+              <img src={Img12} alt="Slide 2" />
             </div>
             <div className="slide">
-              <img src={Img3} alt="Slide 3" />
+              <img src={Img13} alt="Slide 3" />
             </div>
             <div className="slide">
-              <img src={Img4} alt="Slide 4" />
+              <img src={Img14} alt="Slide 4" />
             </div>
             <div className="slide">
-              <img src={Img5} alt="Slide 5" />
+              <img src={Img4} alt="Slide 5" />
             </div>
             <div className="slide">
-              <img src={Img6} alt="Slide 6" />
+              <img src={Img5} alt="Slide 6" />
             </div>
             <div className="slide">
-              <img src={Img1} alt="Slide 1" />
+              <img src={Img2} alt="Slide 1" />
             </div>
             <div className="slide">
-              <img src={Img2} alt="Slide 2" />
+              <img src={Img3} alt="Slide 2" />
             </div>
             <div className="slide">
-              <img src={Img3} alt="Slide 3" />
+              <img src={Img10} alt="Slide 3" />
             </div>
 
             {/* double slides */}

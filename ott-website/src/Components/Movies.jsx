@@ -117,12 +117,12 @@ function GenreSection({ genreTitle, images, isGrid }) {
                   {genreTitle === "Thriller" && (
                     <div className="thriller-details">
                       <div className="thriller-time">
-                        <IoTimeOutline className="thriller-icon" />
-                        <span>1h 30min</span>
+                        <IoTimeOutline size={30} className="thriller-icon" />
+                        <span className="TimeDuration">1h 30min</span>
                       </div>
                       <div className="thriller-views">
-                        <IoEyeOutline className="thriller-icon" />
-                        <span>2K</span>
+                        <IoEyeOutline size={30} className="thriller-icon" />
+                        <span className="TextRating">2K</span>
                       </div>
                     </div>
                   )}
@@ -131,16 +131,16 @@ function GenreSection({ genreTitle, images, isGrid }) {
                   {genreTitle === "Fantasy" && (
                     <div className="fantasy-details">
                       <div className="fantasy-time">
-                        <IoTimeOutline className="fantasy-icon" />
-                        <span>1h 57min</span>
+                        <IoTimeOutline size={30} className="fantasy-icon" />
+                        <span className="TimeDuration">1h 57min</span>
                       </div>
                       <div className="fantasy-rating">
                         <AiFillStar className="fantasy-star" />
+                        <AiFillStar  className="fantasy-star" />
                         <AiFillStar className="fantasy-star" />
-                        <AiFillStar className="fantasy-star" />
-                        <AiFillStar className="fantasy-star" />
-                        <AiFillStar className="fantasy-star half" />
-                        <span>20K</span>
+                        <AiFillStar  className="fantasy-star" />
+                        <AiFillStar  className="fantasy-star half" />
+                        <span className="TextRating">20K</span>
                       </div>
                     </div>
                   )}

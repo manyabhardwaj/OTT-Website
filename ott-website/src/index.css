@@ -16,6 +16,7 @@ body {
   background: var(--Black-08, #141414);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -155,15 +156,16 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   overflow: hidden;
+
 }
 
 .container {
   display: flex;
   margin: 0px 32px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1200px;
 }
 
@@ -229,7 +231,7 @@ h6 {
 
 .slide {
   height: 100%;
-  width: 120px;
+  width: 134px;
   display: flex;
   align-items: center;
   padding: 2px;
@@ -288,6 +290,7 @@ h6 {
 .navbar {
   display: flex;
   padding: 24px 56px;
+  
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -353,7 +356,7 @@ h6 {
   width: 100%;
   z-index: 2;
   text-align: center;
-  padding: 100px 20px;
+  padding: 20px;
 }
 
 .hero-section-content {
@@ -383,20 +386,30 @@ h6 {
   gap: 56px;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 8px;
+  box-sizing: border-box;
+ 
+
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
-.movie-cards {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
 
+
+.movie-cards::-webkit-scrollbar{
+  display: none;
+}
 .movies-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 120px;
   position: relative;
+  
+
+ 
 }
 
 .movies-content {
@@ -404,7 +417,9 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   gap: 56px;
-  overflow: hidden;
+  height: auto;
+
+ 
 }
 
 .movie-sub-container {
@@ -414,6 +429,12 @@ h6 {
   gap: 24px;
   align-self: stretch;
   position: relative;
+  overflow: hidden;
+width: 100%;
+padding: 24px;
+
+
+ 
 }
 
 .movie-sub-container h4 {
@@ -425,17 +446,19 @@ h6 {
   display: flex;
   align-items: center;
   overflow: hidden;
+  width: 100%;
 }
 
 .movie-cards {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  
   overflow-x: auto;
   scroll-behavior: smooth;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1398px;
   padding-left: 56px;
+
 }
 
 .movie-cards::-webkit-scrollbar {
@@ -463,32 +486,20 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
-  flex: 0 0 240px;
-  min-width: 250px;
-  height: fit-content;
+  
+  object-fit: cover;
   overflow: hidden;
   border-radius: 16px;
   background: var(--Black-10, #1A1A1A);
   transition: box-shadow 0.3s ease;
-
-
-
-  margin-right: 20px;
+  margin-right: 16px;
 
 
 
 }
 
-.genre-card:hover {
-  transform: scale(1.05);
-}
 
 
-.shadow-active {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-  /* Adjust shadow as needed */
-}
 
 .arrow {
   position: absolute;
@@ -513,7 +524,7 @@ h6 {
 }
 
 .right-arrow {
-  right: 10px;
+  right: 54px;
   font-size: 28px;
 }
 
@@ -550,7 +561,7 @@ h6 {
 
 .genre-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
   /* height auto set krni hai yha images uske according set krde */
   background-position: center;
   background-repeat: no-repeat;
@@ -563,6 +574,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2px;
+
 }
 
 .grid-card .grid-image {
@@ -590,19 +602,19 @@ h6 {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-  /* background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0.05%, #1A1A1A 99.95%); */
+width: 80px;
+height: 120px;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0.05%, #1A1A1A 99.95%);
   color: var(--Absolute-White);
   font-size: 20px;
 
-  top: 10px;
-  left: 10px;
+ 
   color: #fff;
   z-index: 1;
 
 
 }
+
 
 .arrow {
   position: absolute;
@@ -634,7 +646,7 @@ h6 {
   position: absolute;
   bottom: 8px;
   left: 8px;
-  background-color: gray;
+ 
   right: 8px;
   padding: 6px;
   display: flex;
@@ -651,6 +663,24 @@ h6 {
   color: white;
   font-size: 16px;
   font-family: sans-serif;
+}
+.thriller-views{
+  display: flex;
+padding: 4px 8px 4px 4px;
+align-items: center;
+gap: 4px;
+border-radius: 51px;
+background: rgba(20, 20, 20, 0.60);
+backdrop-filter: blur(4px);
+}
+.thriller-time{
+  display: flex;
+padding: 4px 8px 4px 4px;
+align-items: center;
+gap: 2px;
+border-radius: 51px;
+background: rgba(20, 20, 20, 0.60);
+backdrop-filter: blur(4px);
 }
 
 .thriller-icon {
@@ -672,34 +702,90 @@ h6 {
 .fantasy-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+ 
   position: absolute;
-  bottom: 8px;
-  background-color: gray;
+  align-items: end;
+justify-items: flex-end;
+  bottom: 12px;
+  left: 8px;
+  right: 8px;
+  padding: 6px;
+ 
+  border-radius: 12px;
+
+gap: 20px;
+
+align-self: stretch;
 
 
-  border-radius: 8px;
-  padding: 4px 8px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+padding: 4px 8px 4px 4px;
 }
 
 .fantasy-time,
 .fantasy-rating {
   display: flex;
-  align-items: center;
-  color: white;
-  margin-right: 8px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+ 
 }
 
 .fantasy-icon {
   margin-right: 4px;
   color: white;
-  font-size: bold;
+  font-size:bold;
+ 
+
+  display: flex;
+padding: 4px 8px 4px 4px;
+align-items: center;
+gap: 4px;
 
 }
+.TextRating{
+  color: var(--Grey-90, #E4E4E7);
 
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 18px */
+}
+.fantasy-time{
+  display: flex;
+  padding: 4px 8px 4px 4px;
+  align-items: center;
+  gap: 2px;
+  border-radius: 51px;
+  background: rgba(20, 20, 20, 0.60);
+  backdrop-filter: blur(4px);
+  }
+
+.TimeDuration{
+  color: var(--Grey-90, #E4E4E7);
+ 
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 18px */
+}
+.fantasy-rating{
+  display: flex;
+padding: 4px 8px 4px 4px;
+align-items: center;
+gap: 4px;
+border-radius: 51px;
+background: rgba(20, 20, 20, 0.60);
+backdrop-filter: blur(4px);
+}
 .fantasy-star {
 
-
+size: 20px;
   font-size: bold;
   color: rgb(186, 6, 6);
 }
@@ -1145,6 +1231,20 @@ h6 {
     width: 100%;
     height: 100%;
   }
+  .movie-cards{
+    padding-left: 8px;
+  
+    padding-right: 8px;
+ 
+  }
+  .right-arrow{
+    margin-right: 12px;
+  }
+  .movie-sub-container h4{
+    padding-left: 8px;
+    
+  }
+
 }
 
 /* Media Responsiveness */
@@ -1153,9 +1253,21 @@ h6 {
 
 /* Laptop */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {}
+.main-movies-container{
+  padding: 0 8px;
+}
+.genre-card{
+  flex: 0 0 calc(33.333% - 16px);
+}
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
+  .main-movies-container{
+    padding: 1 4px;
+  }
+  .genre-card{
+    flex:  0 0 calc(50% - 16px);
+  }
 
   /* Features */
 
@@ -1235,14 +1347,16 @@ h6 {
   display:flex;
   flex-direction: column;
   width: 50%;
-  height:740px;
+  height:100%;
  top: 0;
+
  right: -1%;
   z-index: 3;
-  position: absolute;
+  position: fixed;  /* if dont want on full page then isko na absolute krdio and height ko 740px */
   background-color: #262626;
   transition: right 0.3s ease;
   align-content: flex-end;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
   
  }
  .sidebar-menu{
@@ -1287,7 +1401,39 @@ margin-left: 12px;
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-
+.main-movies-container{
+  padding: 0 2px;
+}
+.genre-card{
+  flex:  0 0 calc(100% - 16px);
+  height: 400px;
+}
+.genre-card img{
+  object-fit:fill;
+}
+.card-title{
+  font-size: 0.875rem;
+}
+.card-title-and-arrow{
+  padding: 2px;
+}
+.movie-cards{
+  padding: 6px;
+  gap: 16px;
+}
+.movie-sub-container h4 {
+  padding-left: 8px;
+}
+.right-arrow{
+  right: 4px;
+}
+.movie-sub-container {
+  width: 348px;
+  margin-right: 12px;
+}
+.movie-cards{
+  padding: 16px;
+}
   /* Fonts */
 
   h2 {

@@ -36,13 +36,13 @@ export default function Navbar() {
         </div>
         <button className="primary-btn">Sign In</button>
         <div className="hamburger-menu" onClick={toggleSidebar}>
-        <GiHamburgerMenu size={30} className='hamburgerIcon '/>
+          <GiHamburgerMenu size={30} className='hamburgerIcon' />
         </div>
       </div>
       {isSidebarOpen && (
         <div className="sidebar">
           <div className="sidebar-close" onClick={toggleSidebar}>
-          <IoClose size={24}  className='CloseIcon'/>
+            <IoClose size={24} className='CloseIcon' />
           </div>
           <div className="sidebar-menu">
             <div className="nav-item-active">

@@ -524,7 +524,7 @@ padding: 24px;
 }
 
 .right-arrow {
-  right: 54px;
+  right: 18px;
   font-size: 28px;
 }
 
@@ -1238,7 +1238,7 @@ size: 20px;
  
   }
   .right-arrow{
-    margin-right: 12px;
+    margin-right: 6px;
   }
   .movie-sub-container h4{
     padding-left: 8px;
@@ -1252,13 +1252,18 @@ size: 20px;
 /* Media Responsiveness */
 
 /* Laptop */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
-.main-movies-container{
-  padding: 0 8px;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-movies-container{
+    padding: 0 8px;
+  }
+  .genre-card{
+    flex: 0 0 calc(33.333% - 16px);
+  }
+  .right-arrow{
+    right: 54px;
+  }
 }
-.genre-card{
-  flex: 0 0 calc(33.333% - 16px);
-}
+
 
 /* Tablet */
 @media only screen and (max-width: 768px) {

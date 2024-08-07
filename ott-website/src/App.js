@@ -1,6 +1,6 @@
 import './App.css';
-import './Components/home';
-import Home from './Components/home';
+import './Pages/home';
+import Home from './Pages/home';
 import FAQ from './Components/faq';
 
 function App() {

@@ -1,9 +1,9 @@
 import React from "react";
 import "../index.css";
-import Smartphoneicon from "./Icons/smartphone";
-import Tableticon from "./Icons/tablet"
-import Laptopicon from "./Icons/laptop"
-import Gamingicon from "./Icons/gaming"
+import Smartphoneicon from "../Components/Icons/smartphone";
+import Tableticon from "../Components/Icons/tablet"
+import Laptopicon from "../Components/Icons/laptop"
+import Gamingicon from "../Components/Icons/gaming"
 
 export default function Features() {
 

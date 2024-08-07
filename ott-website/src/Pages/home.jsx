@@ -1,21 +1,21 @@
 import React from "react";
 import "../index.css";
-import Navbar from "./navbar.jsx";
-import Footer from "./footer.jsx";
-import FAQ from "./faq.jsx";
+import Navbar from "../Components/navbar.jsx";
+import Footer from "../Components/footer.jsx";
+import FAQ from "../Components/faq.jsx";
 import Movies from "./Movies.jsx";
 import Pricing from "./pricing.jsx";
 import Cta from "./cta.jsx";
-import Features from "./features.jsx";
-import CustomSlider from "./Slider.jsx"; // Renamed Slider
+import Features from "../Pages/features.jsx";
+import CustomSlider from "../Components/Slider.jsx"; // Renamed Slider
 import { FaCirclePlay } from "react-icons/fa6";
 
 function Home() {
   return (
     <>
       <div className="home">
-        <CustomSlider />
         <Navbar />
+        <CustomSlider />
         <div className="hero-section">
           <div className="hero-section-content">
             <div className="hero-section-title">
